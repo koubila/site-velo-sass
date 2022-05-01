@@ -1,0 +1,108 @@
+* {
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    // grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 60px 1fr 1fr;
+}
+header {
+    // grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    width: 100vw;
+    background-color: #000;
+    text-align: center;
+    padding: 15px;
+    font-size: 22px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;  
+}
+li a {
+    color:white;
+}
+
+h2,p{
+    text-align: center;
+}
+main {
+    grid-row: 2 / 3;
+    // border: 3px green solid;
+}
+section {
+    grid-row: 2 / 4;
+    // border: 3px blue solid;
+}
+aside {
+    grid-row: 2 / 3;
+    // border: 3px orange solid;
+    display: flex;
+    flex-direction: column;
+}
+.pub ,main{
+    width: 100vw;
+    height: 100%;
+}
+ul > li {
+    text-align: center;
+    margin: 15px;
+}
+.image {
+    display: flex;
+    flex-direction: column;
+}
+a img {
+    align-items: center;
+    margin: 30px 30px 0 30px;
+}
+a p {
+    margin: 20px;
+}
+
+// @for $i from 1 to 7 {
+//     .card-#{$i} {
+//         // align-items: center;
+//         margin: 30px 30px 0 30px;
+//     }
+//     h2, p{
+//         margin: 10px;
+//     }
+// }
+// @media all and (min-width:768px){
+//     header {
+//         width: 100%;
+//     }
+
+// }
+// @media all and (min-width: 1024px){
+//     main {
+//         grid-column: 1 / 4;
+//         grid-row: 2 / 3;
+//         border: 3px green solid;
+//     }
+//     section {
+//         grid-column: 1 / 3;
+//         grid-row: 2 / 4;
+//         border: 3px blue solid;
+//         // display: flex;
+//     }
+//     aside {
+//         grid-column: 1 / 3;
+//         grid-row: 2 / 3;
+//         border: 3px orange solid;
+//         display: flex;
+//     }
+//     .pub {
+//         width: 200px;
+//         height: 200px;
+//     }
+// }
