@@ -177,11 +177,9 @@ section {
 
 .background {
   border: rgb(158, 158, 158) 2px solid;
-  background-image: url("../img/cargo.avif");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   margin: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .detail {
@@ -206,7 +204,14 @@ section {
 
 @media all and (max-width: 1024px) {
   main {
-    border: red 20px solid;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
   }
 }
 
